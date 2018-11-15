@@ -1,0 +1,19 @@
+{
+  "name": "qs-repository",
+  "version": "1.0.0",
+  "description": "The base of repository for sequelize on QSoft starter kit",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "QSoft",
+    "repository"
+  ],
+  "author": "Henry Tran",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.com"
+  }
+}
