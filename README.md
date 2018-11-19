@@ -184,3 +184,5 @@ return this.model.create(values, options);
   return this.model.findAndCount(options);
   }
 ```
+
+** [All other functions](http://docs.sequelizejs.com/manual/tutorial/models-usage.html)
