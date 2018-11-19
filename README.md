@@ -22,7 +22,6 @@ The base of repository for sequelize on QSoft starter kit
 ## All the function you can use from base repository:
 
 ```
-/\*\*
 
 - Search for multiple elements in the database
 - @param {\*} options
@@ -36,8 +35,8 @@ The base of repository for sequelize on QSoft starter kit
   }));
   }
 
-/\*
-
+```
+```
 - Handle pagination
 - @param options
 - @returns {_|Promise.<{items: Model[]}>}
@@ -46,8 +45,9 @@ The base of repository for sequelize on QSoft starter kit
   return this.findAll(options);
   }
 
-/\*\*
+```
 
+```
 - Search for one specific element in the database by ID.
 - @param id
 - @param options
@@ -56,7 +56,8 @@ The base of repository for sequelize on QSoft starter kit
   findById(id, options) {
   return this.model.findById(id, options);
   }
-  /\*\*
+```
+```
 - Search for one specific element in the database by attributes.
 - Example: findOne({ where: {title: 'aProject'} })
 - @param {\*} options
@@ -65,7 +66,9 @@ The base of repository for sequelize on QSoft starter kit
   findOne(options) {
   return this.model.findOne(options);
   }
-  /\*\*
+```
+
+```
 - Search for a specific element or create it if not available.
 - Example: modelName.findOrCreate({where: {username: 'xxxxx'}, defaults: {job: 'Technical Lead JavaScript'}})
 - @param {\*} options
@@ -74,7 +77,9 @@ The base of repository for sequelize on QSoft starter kit
   findOrCreate(options) {
   return this.model.findOrCreate(options);
   }
-  /\*\*
+```
+
+```
 - Get the greatest value of a specific attribute within a specific table
 - @param {\*} attribute
 - @param {\*} option
@@ -83,7 +88,9 @@ The base of repository for sequelize on QSoft starter kit
   max(attribute, option) {
   return this.model.max(attribute, option);
   }
-  /\*\*
+```
+
+```
 - Get the least value of a specific attribute within a specific table
 - @param {\*} attribute
 - @param {\*} option
@@ -92,7 +99,9 @@ The base of repository for sequelize on QSoft starter kit
   min(attribute, option) {
   return this.model.min(attribute, option);
   }
-  /\*\*
+```
+
+```
 - Sum the value of specific attributes
 - @param {\*} attribute
 - @param {\*} option
@@ -109,7 +118,9 @@ The base of repository for sequelize on QSoft starter kit
   findAndCountAll(options) {
   return this.model.findAndCountAll(options);
   }
-  /\*\*
+```
+
+```
 - Create new record.
 - @param values
 - @param options
@@ -120,8 +131,9 @@ create(values, options) {
 return this.model.create(values, options);
 }
 
-/\*\*
+```
 
+```
 - Update the given record
 - @param values
 - @param options
@@ -130,8 +142,9 @@ return this.model.create(values, options);
   return this.model.update(values, options);
   }
 
-/\*\*
+```
 
+```
 - Destroy the records. The request body can be {id: 1} or {id: [1,2,3]} or [{id:1},{id:2},{id:3}]
 - @param options
 - @returns {_|Promise.<undefined>|void|Promise.<Integer>}
@@ -160,8 +173,9 @@ return this.model.create(values, options);
   return this.model.destroy(options);
   }
 
-/\*\*
+```
 
+```
 - Find and count matched rows.
 - @param options
 - @returns {_|Promise.<{count: Integer, rows: Model[]}>}
