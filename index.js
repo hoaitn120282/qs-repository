@@ -1,7 +1,8 @@
-import Utils from "sequelize/lib/utils";
-import DataTypes from "sequelize/lib/data-types";
-import _ from "lodash";
-import bluebird from "bluebird";
+"use strict";
+const Utils = require("sequelize/lib/utils");
+const DataTypes = require("sequelize/lib/data-types");
+const _ = require("lodash");
+const bluebird = require("bluebird");
 
 const Promise = bluebird.getNewLibraryCopy();
 
@@ -31,10 +32,10 @@ class BaseRepository {
   }
 
   /*
-     * Handle pagination
-     * @param options
-     * @returns {*|Promise.<{items: Model[]}>}
-     */
+   * Handle pagination
+   * @param options
+   * @returns {*|Promise.<{items: Model[]}>}
+   */
   paginate(options = {}) {
     return this.findAll(options);
   }
@@ -193,4 +194,4 @@ class BaseRepository {
   }
 }
 
-export default BaseRepository;
+module.exports.BaseRepository = BaseRepository;
