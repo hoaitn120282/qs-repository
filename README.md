@@ -2,6 +2,10 @@
 
 The base of repository for sequelize on QSoft starter kit
 
+## Install prerequisites
+This library develop base on Sequelize then you should install Sequelize before use this package.
+`npm install --save sequelize`
+
 ## How to install qs-repository
 
 - open package.json and adding the following:
