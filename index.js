@@ -20,7 +20,7 @@ function () {
   function BaseRepository() {
     _classCallCheck(this, BaseRepository);
 
-    this.model = void 0;
+//     this.model = void 0;
   }
 
   _createClass(BaseRepository, [{
